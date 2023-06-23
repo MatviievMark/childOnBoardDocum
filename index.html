@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Flipbook</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;700&display=swap');
+        body {
+            background-color: #E7E7E7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Gothic A1', sans-serif;
+        }
+        
+        #flipbook {
+            display: flex;
+            justify-content: space-around;
+            width: 80vw;
+            height: 80vh;
+            align-items: center;
+            box-shadow: 0px 30px 15px rgba(0, 0, 0, 0.232);
+            border-radius: 20px;
+            background: linear-gradient(194deg, #00C0F3 0%, #CCF2FD 100%);
+            padding: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        #flipbook img {
+            flex: 1;
+            max-width: 45vw;
+            max-height: 70vh;
+            object-fit: contain;
+            border-radius: 30px;
+        }
+        
+        #flipbook .text-buttons {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 60%;
+            align-items: center;
+        }
+        
+        #flipbook p {
+            color: #FFF;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Gothic A1', sans-serif;
+            font-weight: 700;
+        }
+        
+        #flipbook button {
+            border-radius: 16px;
+            border: 1px solid #FFF;
+            background: rgba(255, 255, 255, 0.60);
+            box-shadow: 0px 4px 26px 2px rgba(0, 153, 193, 0.50);
+            font-size: 20px;
+            color: #0099C1;
+            font-size: 20px;
+            font-family: 'Gothic A1', sans-serif;
+            width: 7vw;
+            height: 7vh;
+            margin: 0 40px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        #flipbook button:hover {
+            background-color: #bbb;
+            transform: scale(1.01);
+        }
+        
+        #flipbook .text {
+            font-size: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='flipbook'>
+        <img src='docum/1.jpg' alt='Image'>
+        <div class='text-buttons'>
+            <p id='text'>Press the watch icon</p>
+            <div class='button-buttons'>
+                <button id='prev'>< Prev</button>
+                <button id='next'>Next></button>
+            </div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
