@@ -1,5 +1,5 @@
 let currentImage = 1;
-const totalImages = 56;
+const totalImages = 75;
 const flipbook = document.getElementById('flipbook');
 const textElement = document.getElementById('text');
 const prevButton = document.getElementById('prev');
@@ -63,9 +63,26 @@ const imageTexts = [
     "Customise the time",
     "Select whether you want Grid View or List View and press continue",
     "Your childs apple watch is ready to go!",
-    "Done"
-
-
+    "Done with the baisic set up. If you wish for a complete lockdown experience, press next",
+    "Press on the 'Screen Time' icon",
+    "Press on the Screen Time Settings",
+    "We will start with the 'Always Allowed' section. Press on the green check sign",
+    "You can select what apps you want your child to alwasys have access to",
+    "Next we recomend setting restrictions on the account",
+    "Toggle Content & Privacy Restrictions",
+    "Enter the password for the screentime you set ealrier",
+    "Slect the allowed apps",
+    "Choose what you apps you want to allow your child to use",
+    "This is what we recomend you to allow",
+    "In the content restrictions you can set more restrictions on what content is allowed",
+    "This is what we recomend",
+    "This is what we recomend",
+    "Select Comunications Limits",
+    "Set up the contacts that are allowed to comunicate with your child",
+    "Toggle communication safety",
+    "We recomend to turn on 'Check for Sensitive Photos'",
+    "In the downtime sections toggle these settings",
+    "We reccomend to schedule a downtime for the device",
 ];
 
 function changeImage() {
