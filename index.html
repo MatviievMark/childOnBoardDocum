@@ -24,7 +24,8 @@
             align-items: center;
             box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, 0.332);
             border-radius: 20px;
-            background: linear-gradient(194deg, #00C0F3 0%, #CCF2FD 100%);
+            background: linear-gradient(194deg, #0F3D58 0%, #00C0F3 100%);
+            /* background: linear-gradient(194deg, #00C0F3 0%, #CCF2FD 100%); */
             padding: 20px;
             transition: all 0.3s ease-in-out;
         }
@@ -71,24 +72,47 @@
             font-weight: 700;
         }
         
-        #flipbook button {
-            background-color: rgba(0, 153, 193, 0.50);
-            border: none;
-            color: white;
-            padding: 15px 50px;
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            width: 420px;
+        }
+        
+        .flipbook-button {
+            width: 200px;
+            height: 50px;
+            flex-shrink: 0;
+            border-radius: 99px;
+            border: 2px solid #00C0F3;
+            background: rgba(255, 255, 255, 0.36);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            /* font-family: 'Tablet Gothic Narrow', sans-serif; */
+            font-family: 'Gothic A1', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--grayscale-white, #FFF);
             text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 30px;
-            margin: 4px 40px;
             cursor: pointer;
-            border-radius: 30px;
             transition: background-color 0.3s ease;
-            box-shadow: 1px 2px 2px 0.6px rgba(0, 0, 0, 0.332);
+        }
+        
+        #prev span,
+        #next span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 23.75px;
+            flex-direction: column;
+            flex-shrink: 0;
         }
         
         #flipbook button:hover {
-            background-color: rgba(0, 123, 145, 0.50);
+            background-color: #0F3D58;
+            color: #FFF;
             transform: scale(1.01);
         }
         
@@ -107,9 +131,9 @@
             <div id='text-container'>
                 <p id='text'>Make sure the watch is nearby</p>
             </div>
-            <div class='button-buttons'>
-                <button id='prev'><span>&larr;</span></button>
-                <button id='next'><span>&rarr;</span></button>
+            <div class='button-container'>
+                <button id='prev' class='flipbook-button'><span>BACK</span></button>
+                <button id='next' class='flipbook-button'><span>NEXT</span></button>
             </div>
         </div>
 
