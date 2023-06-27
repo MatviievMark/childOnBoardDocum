@@ -11,7 +11,7 @@ const imageTexts = [
   "Press the watch icon",
   "Press on set up for family memember, since we are setting the watch up for your child",
   "Continue",
-  "Press continue, or press the 'Learn more' button to read the Data&Privacy policy",
+  "Press continue, or press the 'Learn more' button to read the Data & Privacy policy",
   "Continue",
   "Hold up the camera to scan the apple watch face & Scan the face of the watch",
   "Select the wrist preference",
